@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yuliana &amp; Alexis · Boda &amp; Baby Shower · 29.08.2026</title>
+<title>Yuliana &amp; Alexis · Boda Civil &amp; Baby Shower · 29.08.2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -351,8 +351,8 @@ footer { background:linear-gradient(135deg,var(--warm),var(--dark-warm)); text-a
 #hero-boda {
   min-height:100vh; min-height:100svh; position:relative; overflow:hidden;
   display:flex; flex-direction:column;
-  align-items:center; justify-content:center;
-  text-align:center; padding:3rem 2rem 6rem;
+  align-items:center; justify-content:space-between;
+  text-align:center; padding:5.25rem 2rem 4.5rem;
   background:radial-gradient(circle at 30% 20%, #faf6ee 0%, #f3ead8 55%, #e9dcc2 100%);
 }
 #hero-photo-boda {
@@ -365,6 +365,7 @@ footer { background:linear-gradient(135deg,var(--warm),var(--dark-warm)); text-a
 }
 #hero-boda > *:not(#hero-photo-boda):not(#hero-overlay-boda):not(.petal-float):not(.hero-scroll) { position:relative; z-index:2; }
 #hero-boda .divider-orn { color:var(--gold-light); }
+.hero-top, .hero-bottom { display:flex; flex-direction:column; align-items:center; width:100%; }
 #hero-boda .divider-orn::before,#hero-boda .divider-orn::after { background: rgba(255,255,255,.5); opacity:1; }
 .petal-float {
   position:absolute; z-index:2;
@@ -456,9 +457,13 @@ footer { background:linear-gradient(135deg,var(--warm),var(--dark-warm)); text-a
 }
 
 @media(max-width:480px){
-  #hero-baby, #hero-boda {
+  #hero-baby {
     justify-content:center;
     padding:2.5rem 1.5rem 5.5rem;
+  }
+  #hero-boda {
+    justify-content:space-between;
+    padding:4.5rem 1.5rem 4rem;
   }
   .hero-quote { margin-bottom:0; }
 }
@@ -480,6 +485,7 @@ footer { background:linear-gradient(135deg,var(--warm),var(--dark-warm)); text-a
   transition:transform .35s ease, box-shadow .35s ease;
 }
 #gallery-boda .g-cell:first-child { grid-column:1 / 3; aspect-ratio:16/10; }
+#gallery-boda .g-cell:nth-child(6) { grid-column:1 / 3; aspect-ratio:1/1; }
 #gallery-boda .g-cell:hover { transform:translateY(-4px); box-shadow:0 16px 34px rgba(var(--shadow),.26); }
 #gallery-boda .g-cell img { width:100%; height:100%; object-fit:cover; display:block; transition:transform .5s ease; }
 #gallery-boda .g-cell:hover img { transform:scale(1.035); }
@@ -661,7 +667,7 @@ body.env-open { overflow:hidden; }
       </div>
     </div>
 
-    <p class="env-footer-script">Yuliana &amp; Alexis</p>
+    <p class="env-footer-script">Yuli &amp; Alexis</p>
     <p class="env-footer-date">29 · 08 · 2026</p>
   </div>
 
@@ -669,7 +675,7 @@ body.env-open { overflow:hidden; }
     <div class="env-card-inner">
       <p class="env-card-eyebrow">✦ &nbsp;Invitación Doble &nbsp;✦</p>
       <div class="env-card-hr"></div>
-      <p class="env-card-couple">Yuliana &amp; Alexis</p>
+      <p class="env-card-couple">Yuli &amp; Alexis</p>
       <p class="env-card-date">29 · 08 · 2026</p>
       <div class="env-card-hr"></div>
       <p class="env-family-label">Familia</p>
@@ -688,7 +694,7 @@ body.env-open { overflow:hidden; }
 
       <button class="env-choice" onclick="elegir('boda')">
         <span class="env-choice-emoji">💍</span>
-        <span class="env-choice-txt"><b>Boda</b><small>Yuliana &amp; Alexis</small></span>
+        <span class="env-choice-txt"><b>Boda Civil</b><small>Yuli &amp; Alexis</small></span>
         <span class="env-choice-arrow">→</span>
       </button>
 
@@ -737,24 +743,27 @@ body.env-open { overflow:hidden; }
   <div class="petal-float" style="bottom:16%;right:7%;animation-delay:.7s">✿</div>
   <div class="petal-float" style="top:42%;left:4%;animation-delay:2.1s">❀</div>
 
-  <p class="hero-pre">Con amor, les invitamos a nuestra boda</p>
+  <div class="hero-top">
+    <p class="hero-pre">Con amor, les invitamos a nuestra boda civil</p>
+    <div class="divider-orn">✦</div>
+  </div>
 
-  <div class="divider-orn">✦</div>
+  <div class="hero-bottom">
+    <h1 class="hero-names">
+      Yuliana
+      <span class="amp">&amp;</span>
+      Alexis
+    </h1>
 
-  <h1 class="hero-names">
-    Yuliana
-    <span class="amp">&amp;</span>
-    Alexis
-  </h1>
+    <div class="divider-orn">✦</div>
 
-  <div class="divider-orn">✦</div>
+    <p class="hero-date">Sábado · 29 de Agosto de 2026</p>
 
-  <p class="hero-date">Sábado · 29 de Agosto de 2026</p>
-
-  <p class="hero-quote">
-    Donde el amor florece,<br>
-    comienza una nueva historia.
-  </p>
+    <p class="hero-quote">
+      Donde el amor florece,<br>
+      comienza una nueva historia.
+    </p>
+  </div>
 
   <div class="hero-scroll">
     <div class="scroll-line"></div>
@@ -778,7 +787,6 @@ body.env-open { overflow:hidden; }
 
   <h1 class="hero-names">
     Eduardo Alexis
-    <span class="hero-sub-line">Baby Shower</span>
   </h1>
 
   <div class="divider-orn">🦕</div>
@@ -872,7 +880,7 @@ body.env-open { overflow:hidden; }
         <span class="story-year">Nuestra historia</span>
         <h3 class="story-sub">El día que todo comenzó</h3>
         <p class="story-body">
-          Entre conversaciones, risas y momentos compartidos, nació un amor que, con el paso del tiempo, se hizo más fuerte. Sin imaginarlo, aquel primer encuentro marcó el inicio de la historia más hermosa de nuestras vidas. Hoy estamos listos para dar el siguiente paso y comenzar nuestro para siempre.
+          Entre conversaciones, risas y momentos compartidos, nació un amor que, con el paso del tiempo, se hizo más fuerte. Sin imaginarlo, aquel primer encuentro marcó el inicio de la historia más hermosa de nuestras vidas. Hoy estamos listos para dar el siguiente paso y comenzar nuestro… “Y vivieron felices para siempre”. 🤍
         </p>
       </div>
     </div>
@@ -974,6 +982,7 @@ body.env-open { overflow:hidden; }
       <div class="g-cell" onclick="openLightbox('fotos%20novios/da99e31f-9f58-4149-9852-0f69447f265c.jfif')"><img src="fotos%20novios/da99e31f-9f58-4149-9852-0f69447f265c.jfif" alt="Yuliana &amp; Alexis" loading="lazy"></div>
       <div class="g-cell" onclick="openLightbox('fotos%20novios/f8c997c8-e924-45d9-b9d7-74dc359116ce.jfif')"><img src="fotos%20novios/f8c997c8-e924-45d9-b9d7-74dc359116ce.jfif" alt="Yuliana &amp; Alexis" loading="lazy"></div>
       <div class="g-cell" onclick="openLightbox('fotos%20novios/ff94dc2c-61cc-4db8-b346-3e2170bf9a3f.jfif')"><img src="fotos%20novios/ff94dc2c-61cc-4db8-b346-3e2170bf9a3f.jfif" alt="Yuliana &amp; Alexis" loading="lazy"></div>
+      <div class="g-cell" onclick="openLightbox('fotos%20novios/f5df40ba-c855-42dd-acc9-e0da8ede6c59.jfif')"><img src="fotos%20novios/f5df40ba-c855-42dd-acc9-e0da8ede6c59.jfif" alt="Nuestros anillos" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -1109,9 +1118,9 @@ function aplicarModo(mode){
   const emoji = document.getElementById('switch-emoji');
   const label = document.getElementById('switch-label');
   if(mode === 'boda'){ emoji.textContent = '🦕'; label.textContent = 'Ver el Baby Shower'; }
-  else               { emoji.textContent = '💍'; label.textContent = 'Ver la Boda'; }
+  else               { emoji.textContent = '💍'; label.textContent = 'Ver la Boda Civil'; }
   document.getElementById('cd-label').textContent =
-    (mode === 'boda') ? 'Faltan para nuestra boda' : 'Faltan para el baby shower';
+    (mode === 'boda') ? 'Faltan para nuestra boda civil' : 'Faltan para el baby shower';
   buildNav(mode);
 }
 
